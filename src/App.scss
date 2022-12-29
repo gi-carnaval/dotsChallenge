@@ -1,0 +1,50 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+#screen {
+  background: #8400ff;
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .dot {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: red;
+    top: 100px;
+    left: 100px;
+    border-radius: 50%;
+    transform: translate(-10px, -10px);
+  }
+
+  button {
+    position: absolute;
+    padding: 10px 25px;
+  }
+
+  .undo{
+    top: 20px;
+    left: 40%;
+    transform: translateX(-50%);
+  }
+
+  .reset{
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .redo{
+    top: 20px;
+    left: 60%;
+    transform: translateX(-50%);
+  }
+}
